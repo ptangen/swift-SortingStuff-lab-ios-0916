@@ -10,12 +10,36 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+  
+  
+  enum StoryboardConstants: String {
+    case BasicCell
+    
+  }
 
     var window: UIWindow?
+  
+  func test(word: String) {
+    
+    
+  }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+      
+      let newColor = Color(rawValue: 2)
+      
+      let badError = BadError.noStomach("Hungry", true, nil, 2)
+      
+      
+      test(word: StoryboardConstants.BasicCell.rawValue)
+      
+      
+      
+
+      
+      
         return true
     }
 

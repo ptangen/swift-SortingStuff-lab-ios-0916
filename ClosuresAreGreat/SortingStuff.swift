@@ -17,8 +17,7 @@ struct ToyBin {
     var musicCDs: [MusicCD] = []
     
     // TODO: Implement all of the sort functions (lets organize this toy bin!)
-    
- 
+
 }
 
 
@@ -48,6 +47,14 @@ extension BowlingPin {
     }
 }
 
+enum BadError: Error {
+  
+    case noCheese(Bool)
+    case noBread(String)
+    case noStomach(String, Bool, Double?, Int)
+  
+  
+}
 
 enum Color: Int {
     case red, organe, yellow, green, blue, indigo, violet
